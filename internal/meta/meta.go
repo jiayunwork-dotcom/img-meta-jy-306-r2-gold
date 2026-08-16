@@ -35,7 +35,7 @@ func Extract(path string) (Meta, error) {
 	defer f.Close()
 	cfg, format, err := image.DecodeConfig(f)
 	if err != nil {
-		return Meta{}, fmt.Errorf("%v: %v", ErrUnsupported, err)
+		return Meta{}, fmt.Errorf("%w: %v", ErrUnsupported, err)
 	}
 	return Meta{
 		Path:       path,
