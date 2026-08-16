@@ -1,0 +1,3 @@
+usage:
+  img-meta scan --dir DIR [--template T] [--apply]
+error: missing command
